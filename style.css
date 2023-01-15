@@ -1,3 +1,105 @@
 body {
     background-color: #FF6978; 
+    margin: 0px; 
+    padding: 0px; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+}
+
+#manifest, #box{
+    background-color: #FFFCF9; 
+    width: 80%;  
+    padding: 20px; 
+    margin: 10px; 
+}
+
+#list, #boxlist {
+    border: solid black 3px;
+    width: 100%; 
+    height: 100%;  
+    background-color: #FFFCF9; 
+    border-radius: 5px; 
+    font-family: 'Bitter'; 
+    padding-bottom: 20px; 
+}
+
+th {
+    width: 50%; 
+    height: 35px;  
+    background-color: #e0dedb; 
+}
+
+td {
+    font-size: 25px; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+#boxlist td {
+    cursor: pointer; 
+}
+
+.itemdiv {
+    font-size: 25px; 
+    cursor: pointer; 
+    text-align: center
+}
+
+.sizediv {
+    font-size: 30px; 
+    text-align: center; 
+}
+
+#totalSizeScore, #totalCost{
+    font-size: 25px; 
+    font-family: 'Bitter'; 
+    font-weight: 600; 
+    margin-top: 10px; 
+}
+
+
+#closebox {
+    border: none; 
+    color: #FFFCF9; 
+    background-color: #6D435A; 
+    font-family: 'Bitter'; 
+    font-weight: 700; 
+    font-size: 20px; 
+    padding: 10px;
+    margin: 10px 0px 20px 0px;  
+    cursor: pointer; 
+}
+
+#smallbox, #largebox, #xlargebox {
+    border: none; 
+    color: #FFFCF9; 
+    background-color: #6D435A; 
+    font-family: 'Bitter'; 
+    font-weight: 700; 
+    font-size: 25px; 
+    padding: 20px; 
+    margin: 20px 20px 20px 0px; 
+    cursor: pointer; 
+}
+
+#buttons {
+    grid-column-start: 1; 
+    grid-column-end: span end; 
+    margin: 15px; 
+}
+
+h2 {
+    color: #FFFCF9; 
+    font-family: 'Bitter'; 
+    font-size: 40px; 
+    font-weight: 700; 
+}
+
+#footer, #checkout {
+    font-size: 30px; 
+    font-weight: 700; 
+    font-family: 'Bitter'; 
+    color: #FFFCF9; 
+    margin: 30px 0px 20px 15px;
+    grid-column: 2 span; 
 }

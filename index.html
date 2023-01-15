@@ -7,6 +7,7 @@
     <title>Cargo Manifests</title>
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
 </head>
 <body onload="initialize();">
     <div id="manifest">
@@ -15,7 +16,44 @@
                 <th>ITEM</th>
                 <th>SIZING SCORE</th>
             </tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
+            <tr><td onclick="addtoBox(this);" class='itemdiv'></td><td class="sizediv"></td></tr>
         </table>
+    </div>
+
+    <div id="box">
+        <table id="boxlist" style="height:80%">
+            <tr>
+                <th id="boxSize"></th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+        <div id="totalSizeScore">Total Size Score: <span id="total" style="color:#340068;font-weight:700;"></span></div>
+        <div id="totalCost">Total Cost: <span id="cost" style="color:#340068;font-weight:700;"></span></div>
+        <button onclick="closeBox();" id="closebox">CLOSE BOX</button>
+    </div>
+
+    <div id="buttons">
+        <h2>BOX SIZES:</h2>
+        <button onclick="smallBox();" id="smallbox">SMALL BOX (3)</button>
+        <button onclick="largeBox();" id="largebox">LARGE BOX (6)</button>
+        <button onclick="xlargeBox();" id="xlargebox">EXTRA LARGE BOX (10)</button>
+    </div>
+
+    <div id="checkout"></div>
+
+    <div id="footer">
+        Total Manifests Remaining: <span id="remain" style="color:#340068"></span>
     </div>
 </body>
 </html>
